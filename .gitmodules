@@ -1,0 +1,6 @@
+[submodule "plugin"]
+	path = plugin
+	url = https://github.com/AnkleBreaker-Studio/unity-mcp-plugin.git
+[submodule "server"]
+	path = server
+	url = https://github.com/AnkleBreaker-Studio/unity-mcp-server.git
