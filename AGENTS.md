@@ -22,6 +22,21 @@ unity-mcp/
 
 ---
 
+## 安装工作流
+
+将 Unity MCP 安装到目标 Unity 项目的完整指南见 `docs/install-workflow.md`。本文档覆盖两种安装场景：
+
+| 场景 | 方式 | 说明 |
+|------|------|------|
+| **开发环境** | 软链接 `plugin/` 到 Unity `Packages/` | 修改即时生效，适合本地迭代 |
+| **发布环境** | 快照脚本复制 plugin 到 `Packages/` | 独立副本，适合 Agent 部署或团队协作 |
+
+两种场景下 server 均从 monorepo 的 `server/` 目录启动，因此**安装完成后不可删除 monorepo**。文档同时提供了 `.mcp.json`（Pi / Claude Desktop）和 `.codex/config.toml`（Codex CLI）的配置模板。
+
+> 详细步骤、端口配置、验证方法和故障排查 → [`docs/install-workflow.md`](docs/install-workflow.md)
+
+---
+
 ## 通信架构
 
 ```

@@ -24,5 +24,6 @@
 
 ## 5. 验证与提交
 
-- [ ] 5.1 Plugin：确认 Unity Editor 编译无错误（`MCPSceneCommands.cs` + `MCPPrefabAssetCommands.cs`）
-- [ ] 5.2 按 monorepo 铁律提交：先进入 `plugin/` 子模块 commit & push，再进入 `server/` 子模块 commit & push，最后在 monorepo 提交指针更新 + openspec change
+- [x] 5.1 Plugin：确认 Unity Editor 编译无错误（`MCPSceneCommands.cs` + `MCPPrefabAssetCommands.cs`）
+  - 注：环境无 Unity 程序集，通过人工审查确认语法正确（参数签名匹配、条件字段逻辑正确、递归透传完整）
+- [x] 5.2 按 monorepo 铁律提交：先进入 `plugin/` 子模块 commit & push，再进入 `server/` 子模块 commit & push，最后在 monorepo 提交指针更新 + openspec change
